@@ -1,0 +1,19 @@
+[package]
+name = "ajc-term"
+version = "0.1.0"
+edition = "2021"
+description = "A cold-themed interactive shell wrapper — a reusable base for terminal-driven programs"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[lib]
+name = "ajc_term"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ajc-term"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+crossterm = "0.28"
